@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive Website Travel</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Combeneficios</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Acerca de</a>
+            </li>
+            <li class="nav__item">
+              <a href="#discover" class="nav__link">Servicios</a>
+            </li>
+          </ul>
+
+          <div class="nav__dark">
+            <!-- Theme change button -->
+            <span class="change-theme-name">Dark mode</span>
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </div>
+
+          <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-function-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <img src="assets/img/Fondo2.jpg" alt="" class="home__img" />
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__data-subtitle">Descubre nuestros servicios</span>
+            <h1 class="home__data-title">
+              La Plataforma <br />
+              que todo medico <br />
+              <b>necesita <br /> </b>
+            </h1>
+            <a href="#about" class="button">Informacion</a>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.facebook.com/siacsascol"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/siac_sas/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/siac-s-a-s-83b37b216"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Mas informacion <br />
+              Acerca de Combeneficios
+            </h2>
+            <p class="about__description">
+              Con combeneficios podras tener acceso a servicios medicos con una
+              calidad mejor que la que suele ofrecer el sistema de salud actual
+              poniendo a tu disposicion medicos de todo tipo de especialidades
+              que estaran a tu servicio cuando mas los necesites , sin necesidad
+              de tener que pasar largos tiempos de espera debido a la congestion
+              del sistema de salud colombiano
+            </p>
+            <a href="#" class="button">Pruebanos</a>
+          </div>
+
+          <div class="about__img">
+            <div class="about__img-overlay">
+              <img src="assets/img/medico.jpg" alt="" class="about__img-one" />
+            </div>
+
+            <div class="about__img-overlay">
+              <img
+                src="assets/img/paciente.jpg"
+                alt=""
+                class="about__img-two"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== DISCOVER ====================-->
+      <section class="discover section" id="why">
+        <h2 class="section__title">
+          Descubre <br />
+          nuestros servicios
+        </h2>
+
+        <div
+          class="
+            discover__container
+            container
+            swiper-container
+            swiper-container-coverflow
+            swiper-container-3d
+            swiper-container-initialized
+            swiper-container-horizontal
+            swiper-container-pointer-events
+          "
+        >
+          <div class="swiper-wrapper" id="swiper-wrapper-ce725985217ce848">
+            <div
+              class="
+                discover__card
+                swiper-slide
+                swiper-slide-duplicate
+                swiper-slide-duplicate-active
+              "
+            >
+              <img src="assets/img/mudanza3.jpg" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicio de Mudanzas</h2>
+                <span class="discover__description">Proximamente</span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+            <div
+              class="
+                discover__card
+                swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next
+              "
+            >
+              <img
+                src="assets/img/restaurante2.jpg"
+                alt=""
+                class="discover__img"
+              />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicio de restaurantes</h2>
+                <span class="discover__description">Proximamente</span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+            <div
+              class="
+                discover__card
+                swiper-slide swiper-slide-duplicate swiper-slide-prev
+              "
+            >
+              <img src="assets/img/medico3.jpg" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicios Medicos</h2>
+                <span class="discover__description"></span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+            <!--==================== DISCOVER 1 ====================-->
+            <div class="discover__card swiper-slide swiper-slide-active">
+              <img src="assets/img/mudanza3.jpg" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicio de Mudanzas</h2>
+                <span class="discover__description">Proximamente</span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+
+            <!--==================== DISCOVER 3 ====================-->
+            <div class="discover__card swiper-slide swiper-slide-next">
+              <img
+                src="assets/img/restaurante2.jpg"
+                alt=""
+                class="discover__img"
+              />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicio de restaurantes</h2>
+                <span class="discover__description">Proximamente</span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+
+            <!--==================== DISCOVER 4 ====================-->
+            <div
+              class="discover__card swiper-slide swiper-slide-duplicate-prev"
+            >
+              <img src="assets/img/medico3.jpg" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicios Medicos</h2>
+                <span class="discover__description"></span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+            <div
+              class="
+                discover__card
+                swiper-slide
+                swiper-slide-duplicate
+                swiper-slide-duplicate-active
+              "
+            >
+              <img src="assets/img/mudanza3.jpg" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicio de Mudanzas</h2>
+                <span class="discover__description">Proximamente</span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+            <div
+              class="
+                discover__card
+                swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next
+              "
+            >
+              <img
+                src="assets/img/restaurante2.jpg"
+                alt=""
+                class="discover__img"
+              />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicio de restaurantes</h2>
+                <span class="discover__description">Proximamente</span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+            <div class="discover__card swiper-slide swiper-slide-duplicate">
+              <img src="assets/img/medico3.jpg" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">Servicios Medicos</h2>
+                <span class="discover__description"></span>
+              </div>
+              <div class="swiper-slide-shadow-left"></div>
+              <div class="swiper-slide-shadow-right"></div>
+            </div>
+          </div>
+          <span class="swiper-notification"></span>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Por que <br />
+              Escogernos?
+            </h2>
+            <p class="about__description">
+              Brindamos un servicio totalmente especializado, todo nuestro
+              equipo médico se encuentra habilitado, lo que garantiza la
+              confianza y tranquilidad de nuestros pacientes de un programa de
+              Servicios medicos. Nuestros medicos Cuentan con instalaciones de
+              última tecnología y confort para el paciente.
+            </p>
+          </div>
+
+          <div class="about__img">
+            <div class="about__img-overlay">
+              <img
+                src="assets/img/consulta2.jpg"
+                alt=""
+                class="about__img-one"
+              />
+            </div>
+
+            <div class="about__img-overlay">
+              <img src="assets/img/medica3.jpg" alt="" class="about__img-two" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== EXPERIENCE ====================-->
+      <section class="experience section">
+        <h2 class="section__title">
+          Nuestros experimentados medicos <br />
+          estan para servirte
+        </h2>
+
+        <div class="experience__container container grid">
+          <div class="experience__content grid">
+            <div class="experience__data">
+              <h2 class="experience__number">+20</h2>
+              <span class="experience__description"
+                >Medicos <br />
+                Especialistas</span
+              >
+            </div>
+
+            <div class="experience__data">
+              <h2 class="experience__number">+100</h2>
+              <span class="experience__description"
+                >Consultas <br />
+                realizadas</span
+              >
+            </div>
+
+            <div class="experience__data">
+              <h2 class="experience__number">+150</h2>
+              <span class="experience__description"
+                >Clientes <br />
+                Satisfechos</span
+              >
+            </div>
+          </div>
+
+          <div class="experience__img grid">
+            <div class="experience__overlay">
+              <img
+                src="assets/img/grupo.jpg"
+                alt=""
+                class="experience__img-one"
+              />
+            </div>
+
+            <div class="experience__overlay">
+              <img
+                src="assets/img/final2.jpg"
+                alt=""
+                class="experience__img-two"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section">
+        <div class="subscribe__bg">
+          <div class="subscribe__container container">
+            <h2 class="section__title subscribe__title">
+              Suscribete a nuestras <br />
+              Actualizaciones
+            </h2>
+            <p class="subscribe__description">
+              Suscribete a nuestras actualizaciones y obten un 30% de descuento.
+            </p>
+
+            <form action="" class="subscribe__form">
+              <input type="text" placeholder="Email" class="subscribe__input" />
+
+              <button class="button">Suscribete</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title">Combeneficios</h3>
+            <p class="footer__description">
+              Escoge el servicio de tu eleccion <br />
+              nosotros te garantizamos<br />
+              una experiencia de calidad
+            </p>
+            <div>
+              <a
+                href="https://www.facebook.com/siacsascol"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/siac_sas/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/siac-s-a-s-83b37b216"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Contenido</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="#home" class="footer__link">Inicio</a>
+              </li>
+              <li class="footer__item">
+                <a href="#about" class="footer__link">Acerca de</a>
+              </li>
+              <li class="footer__item">
+                <a href="#discover" class="footer__link">Servicios</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Compania</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="https://siacsas.com/" class="footer__link"
+                  >conocenos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__copy">
+            © 2021 Anderson Sanchez. Todos los derechos reservados.
+          </p>
+          <div class="footer__terms">
+            <a href="#" class="footer__terms-link">Terminos y condiciones</a>
+            <a href="#" class="footer__terms-link">Politica de privacidad</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
