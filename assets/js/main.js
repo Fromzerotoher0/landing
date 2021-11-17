@@ -158,3 +158,22 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+const button = document.getElementById("suscribir");
+button.addEventListener("click", () => {
+  const correo = document.getElementById("correo");
+  const data = {
+    email: correo.value,
+  };
+  console.log(correo.value);
+  fetch("https://mailserverand.herokuapp.com/api/mail", {
+    method: "post",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((res) => res.json())
+    .then((res) => console.log(res));
+});
